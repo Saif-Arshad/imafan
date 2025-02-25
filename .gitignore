@@ -1,0 +1,8 @@
+node_modules
+.env
+package-lock.json
+.adminjs
+tmp
+logs
+bin
+public/receipts

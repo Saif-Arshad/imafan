@@ -1,0 +1,15 @@
+{
+  "name": "server-starter",
+  "version": "1.0.0",
+  "description": "Cross-platform server starter for backend and dashboard",
+  "main": "src/start.js",
+  "scripts": {
+    "start": "node src/start.js",
+    "build": "pkg src/start.js --targets node16-win-x64,node16-macos-x64 --output bin/server-starter"
+  },
+  "author": "UsmanAsif193",
+  "license": "ISC",
+  "dependencies": {
+    "pkg": "^5.8.1"
+  }
+}

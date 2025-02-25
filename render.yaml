@@ -1,0 +1,22 @@
+services:
+  - name: imafan
+    type: web
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node src/app.js"
+    envVars:
+      - key: MONGO_URI
+        value: "mongodb+srv://admin:hello!23@cluster0.gz59t.mongodb.net/imafan"
+      - key: SECRET
+        value: "vasdvasd"
+      - key: NODE_ENV
+        value: "development"
+      - key: BASE_URL
+        value: "http://localhost:3344"
+      - key: TWILIO_ACCOUNT_SID
+        value: "AC8760397513738093d88a8d432fa38c49"
+      - key: TWILIO_AUTH_TOKEN
+        value: "5bb55f6371e4cb21c7fb6bc6d1e49f06"
+      - key: TWILIO_PHONE_NUMBER
+        value: "+13158975198"
